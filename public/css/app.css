@@ -16127,7 +16127,10 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    max-width: 95% !important;
+    max-width: 100% !important;
+  }
+  header nav .collapse ul li a {
+    font-size: 12px !important;
   }
 }
 @media (max-width: 990px) {
@@ -16170,7 +16173,7 @@ header nav ul li a:hover {
 .carousel .header-text {
   position: absolute;
   top: 5%;
-  left: 5%;
+  left: 4%;
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -16230,6 +16233,42 @@ header nav ul li a:hover {
 
 section {
   height: 100px;
+}
+
+@media (max-width: 1024px) {
+  .carousel .header-text .liens {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+  }
+  .carousel .header-text .liens a {
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 20px;
+  }
+  .carousel .header-text .liens a:hover {
+    color: white;
+    background-color: #c42d40;
+  }
+  .carousel .header-text .header-text_icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: grey;
+    height: 50%;
+    width: 8%;
+  }
+  .carousel .header-text .header-text_icons i:first-of-type {
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 0.45em;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

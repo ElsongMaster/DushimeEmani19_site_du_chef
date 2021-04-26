@@ -76,8 +76,17 @@ header {
       justify-content: center;
       align-items: center;
       height: fit-content;
-      max-width: 95% !important;
+      max-width: 100% !important;
       //   border: 2px solid yellow;
+      .collapse {
+        ul {
+          li {
+            a {
+              font-size: 12px !important;
+            }
+          }
+        }
+      }
     }
   }
 }
