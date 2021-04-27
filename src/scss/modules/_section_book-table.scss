@@ -1,3 +1,127 @@
 .section_book-table {
-  height: 600px;
+  height: 1300px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid yellow;
+  background-color: white !important;
+  background: url(../images/box-left-top-grey.png) top left,
+    url(../images/box-right-top-grey.png) top right,
+    url(../images/box-bottom-left-grey.png) bottom left,
+    url(../images/box-bottom_right-grey.png) bottom right;
+  background-repeat: no-repeat;
+  margin: 20px 0;
+  .title:first-child {
+    margin: 50px 0;
+  }
+  a {
+    height: fit-content;
+    width: fit-content;
+
+    color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(196, 45, 64);
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: white;
+  }
+
+  .container-form {
+    background-image: url("../images/book_table_bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    span,
+    a {
+      color: white;
+    }
+    p {
+      margin: 50px 0;
+
+      color: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      text-align: center;
+    }
+
+    .row {
+      margin-bottom: 15px;
+      align-self: center;
+      .col {
+        * {
+          border-radius: 10px;
+          width: 100%;
+          outline: none;
+        }
+      }
+    }
+
+    .row:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  .our-blog_container {
+    // border: 2px solid blue;
+    width: 80%;
+    margin-top: 40px;
+    .row {
+      margin-bottom: 40px;
+      .col {
+        .superposition {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          .bg1 {
+            background-image: url("../images/blog_img1.jpg");
+          }
+          .bg2 {
+            background-image: url("../images/blog_img2.jpg");
+          }
+          .bg-img {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: 5px solid rgba(128, 128, 128, 0.5);
+            border-radius: 10px;
+            height: 225px;
+            width: 325px;
+            margin-bottom: 50px;
+          }
+
+          p {
+            background-color: rgb(196, 45, 64);
+
+            color: rgba(255, 255, 255, 0.7);
+            width: 90%;
+            border-radius: 10px;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+
+            span {
+              color: white;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+    .lien-know {
+      width: 100%;
+      text-align: center;
+      a {
+        color: white;
+      }
+    }
+  }
 }
