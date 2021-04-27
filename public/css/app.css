@@ -16273,8 +16273,19 @@ section {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../images/main_bg.jpg);
+}
+main .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+main .title h2 span {
+  text-transform: uppercase;
+  color: #c42d40;
 }
 
 .section-menu_content {
@@ -16390,10 +16401,45 @@ main {
 .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .price span {
   background-color: rgba(128, 128, 128, 0.3);
   padding: 0 10px;
-}
-.section-menu_content span {
-  text-transform: uppercase;
   color: #c42d40;
+}
+
+.meet-chef_container {
+  height: fit-content;
+  background-color: black;
+}
+.meet-chef_container *:not(span) {
+  color: white;
+}
+.meet-chef_container .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meet-chef_container .row .col img {
+  height: 242px;
+  width: 166px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+}
+.meet-chef_container .row .col p {
+  height: fit-content;
+  text-align: center;
+}
+.meet-chef_container .row .col p:last-child {
+  height: 0;
+  overflow: hidden;
+  border: none;
+  transition: 2s;
+  color: rgba(255, 255, 255, 0);
+}
+.meet-chef_container .row .col p:first-child:hover ~ p {
+  height: 90px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.section_book-table {
+  height: 600px;
 }
 
 /*# sourceMappingURL=app.css.map */

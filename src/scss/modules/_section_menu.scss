@@ -1,7 +1,22 @@
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../images/main_bg.jpg);
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+
+    h2 {
+      span {
+        text-transform: uppercase;
+        color: rgb(196, 45, 64);
+      }
+    }
+  }
 }
 .section-menu_content {
   display: flex;
@@ -136,15 +151,12 @@ main {
               span {
                 background-color: rgba(128, 128, 128, 0.3);
                 padding: 0 10px;
+                color: rgb(196, 45, 64);
               }
             }
           }
         }
       }
     }
-  }
-  span {
-    text-transform: uppercase;
-    color: rgb(196, 45, 64);
   }
 }

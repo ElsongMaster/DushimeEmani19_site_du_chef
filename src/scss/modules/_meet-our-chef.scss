@@ -1,0 +1,45 @@
+.meet-chef_container {
+  height: fit-content;
+
+  background-color: black;
+
+  *:not(span) {
+    color: white;
+  }
+
+  .row {
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   border: 2px solid red;
+
+      img {
+        height: 242px;
+        width: 166px;
+        // border: 2px solid blue;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+      }
+
+      p {
+        height: fit-content;
+        // border: 2px solid yellow;
+        text-align: center;
+      }
+
+      p:last-child {
+        height: 0;
+        overflow: hidden;
+        border: none;
+        transition: 2s;
+        color: rgba(255, 255, 255, 0);
+      }
+
+      p:first-child:hover ~ p {
+        height: 90px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: white;
+      }
+    }
+  }
+}
