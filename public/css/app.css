@@ -16564,6 +16564,10 @@ main .title h2 span {
   border-radius: 10px;
   width: 100%;
   outline: none;
+  padding: 10px;
+}
+.section_book-table .container-form .row .col ::placeholder {
+  color: black;
 }
 .section_book-table .container-form .row:last-child {
   margin-bottom: 50px;
@@ -16617,6 +16621,22 @@ main .title h2 span {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .section_book-table .container-form {
+    height: fit-content;
+  }
+  .section_book-table .container-form .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .section_book-table .container-form .row .col:last-child {
+    margin-top: 20px;
+  }
+  .section_book-table a {
+    display: flex;
+    margin-bottom: 25px;
+  }
+}
 .testimonials {
   display: flex;
   flex-direction: column;

@@ -61,6 +61,10 @@
           border-radius: 10px;
           width: 100%;
           outline: none;
+          padding: 10px;
+        }
+        ::placeholder {
+          color: black;
         }
       }
     }
@@ -122,6 +126,25 @@
       a {
         color: white;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section_book-table {
+    .container-form {
+      height: fit-content;
+      .row {
+        display: flex;
+        flex-direction: column;
+        .col:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+    a {
+      display: flex;
+      margin-bottom: 25px;
     }
   }
 }
