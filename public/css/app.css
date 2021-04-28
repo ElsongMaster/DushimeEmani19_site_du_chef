@@ -16277,7 +16277,7 @@ main {
   align-items: center;
   background-image: url(../images/main_bg.jpg);
   border: 2px solid red;
-  height: 3800px;
+  height: 4000px;
 }
 main .title {
   display: flex;
@@ -16664,6 +16664,102 @@ section.our-contact .our-contact_content > div i {
 }
 section.our-contact .our-contact_content > div p {
   margin-top: 5px;
+}
+
+footer .footer-content {
+  display: flex;
+  background: url("../images/footer_background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid #2bff00;
+  height: 300px;
+}
+footer .footer-content > * {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+footer .footer-content *:not(p) {
+  color: white;
+}
+footer .footer-content h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+footer .footer-content .container_about-us {
+  border: 2px solid blue;
+}
+footer .footer-content .container_about-us p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+footer .footer-content .container_about-us .icons-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+footer .footer-content .container_about-us .icons-socials i {
+  font-size: 20px;
+}
+footer .footer-content .container-instagram {
+  border: 2px solid yellow;
+  height: 100%;
+  width: 100%;
+}
+footer .footer-content .container-instagram .row-bg {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+footer .footer-content .container-instagram .row-bg .insta-bg1 {
+  background-image: url("../images/instragram_gallery_img1.jpg");
+}
+footer .footer-content .container-instagram .row-bg .insta-bg2 {
+  background-image: url("../images/instragram_gallery_img2.jpg");
+}
+footer .footer-content .container-instagram .row-bg .col-bg {
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer .footer-content .container_popular-tags {
+  border: 2px solid purple;
+}
+footer .footer-content .container_popular-tags div {
+  display: flex;
+}
+footer .footer-content .container_popular-tags div p {
+  font-size: 0.8em;
+  background-color: #c42d40;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+footer .bg-footer {
+  height: 100px;
+  background-color: #c42d40;
+}
+
+@media (max-width: 1024px) {
+  footer .footer-content {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  footer .footer-content > * {
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+    text-align: center;
+    align-items: center;
+  }
+  footer .footer-content .container-instagram .row-bg {
+    border: 2px solid grey;
+  }
+  footer .footer-content .container-instagram .row-bg .col-bg {
+    height: max(15vw, 60px);
+    width: max(15vw, 60px);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
