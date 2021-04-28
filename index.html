@@ -45,13 +45,17 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
+              <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">menu</a>
+              <a class="nav-link" href="#menu">menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a
+                class="nav-link"
+                href="#team"
+                tabindex="-1"
+                aria-disabled="true"
                 >team</a
               >
             </li>
@@ -59,25 +63,29 @@
           <img src="./public/images/logo.png" alt="" />
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#reservation"
                 >reservation <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">blog</a>
+              <a class="nav-link" href="#blog">blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">testimonials</a>
+              <a class="nav-link" href="#testimonials">testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a
+                class="nav-link"
+                href="#contact"
+                tabindex="-1"
+                aria-disabled="true"
                 >contact us</a
               >
             </li>
           </ul>
         </div>
       </nav>
-      <div>
+      <div class="carousel-container">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -128,7 +136,7 @@
       </div>
     </header>
     <main>
-      <section class="section-menu_content">
+      <section class="section-menu_content" id="menu">
         <div class="our-story">
           <div class="title">
             <h2><span>our</span> stoy</h2>
@@ -160,7 +168,6 @@
           <!--fermeture our-story-->
           <div class="menu-list_content">
             <div class="sidebar">
-              <!-- Sidebar -->
               <div class="bg-light border-right" id="sidebar-wrapper">
                 <div class="list-group list-group-flush">
                   <div class="onglet-sidebar">
@@ -210,6 +217,7 @@
                 </div>
               </div>
             </div>
+
             <div class="tab-content">
               <div
                 class="container tab-pane fade show active sidebar-content"
@@ -503,10 +511,7 @@
                 </div>
               </div>
               <!--fermeture sidebar-content-->
-              <div
-                class="container tab-pane fade show sidebar-content"
-                id="id3"
-              >
+              <div class="container tab-pane fade sidebar-content" id="id3">
                 <div class="row">
                   <div class="col">
                     <div class="bg-coffee">
@@ -649,10 +654,7 @@
                 </div>
               </div>
               <!--fermeture sidebar-content-->
-              <div
-                class="container tab-pane fade show sidebar-content"
-                id="id4"
-              >
+              <div class="container tab-pane fade sidebar-content" id="id4">
                 <div class="row">
                   <div class="col">
                     <div class="bg-coffee">
@@ -802,7 +804,7 @@
       </section>
       <!-- fermeture section-menu_content-->
 
-      <div class="container-fluid meet-chef_container">
+      <div class="container-fluid meet-chef_container" id="team">
         <div class="title">
           <h2>
             <span>meet</span>
@@ -859,7 +861,7 @@
         </div>
       </div>
 
-      <section class="section_book-table">
+      <section class="section_book-table" id="reservation">
         <div class="title">
           <h2><span>book</span> Your Table</h2>
           <img
@@ -913,7 +915,7 @@
           </div>
           <a href="#">book now</a>
         </div>
-        <div class="title">
+        <div class="title" id="blog">
           <h2><span>our</span> Blog</h2>
           <img
             src="./public/images/decoration_line.png"
@@ -960,7 +962,7 @@
         </div>
         <!--fermeture our-blog_containe-->
       </section>
-      <div class="container-fluid testimonials">
+      <div class="container-fluid testimonials" id="testimonials">
         <div class="title">
           <h2><span>client</span> Testimonials</h2>
           <img
@@ -997,7 +999,7 @@
           </div>
         </div>
       </div>
-      <section class="our-contact">
+      <section class="our-contact" id="contact">
         <div class="title">
           <h2><span>our</span> Contact</h2>
           <img
@@ -1028,7 +1030,7 @@
     </main>
 
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="about">
         <div class="container_about-us">
           <h4>about us</h4>
           <p>

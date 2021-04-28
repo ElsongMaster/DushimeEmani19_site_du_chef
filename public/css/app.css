@@ -16190,7 +16190,6 @@ header nav ul li a:hover {
   margin: 0;
 }
 .carousel .header-text p span {
-  display: inline-flex;
   height: 65px;
   font-size: 50px;
   text-transform: uppercase;
@@ -16237,11 +16236,19 @@ section {
 }
 
 @media (max-width: 1024px) {
+  .carousel .header-text p {
+    font-size: max(4vw, 15px);
+  }
+  .carousel .header-text p span {
+    font-size: max(6vw, 20px);
+  }
   .carousel .header-text .liens {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
+    min-height: 57px;
+    margin-bottom: max(5vw, 50px);
   }
   .carousel .header-text .liens a {
     height: fit-content;
@@ -16250,6 +16257,7 @@ section {
     color: black;
     border-radius: 15px;
     padding: 5px 20px;
+    font-size: max(2vw, 8px);
   }
   .carousel .header-text .liens a:hover {
     color: white;
@@ -16276,7 +16284,6 @@ main {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/main_bg.jpg);
-  border: 2px solid red;
   height: 4000px;
 }
 main .title {
@@ -16297,7 +16304,6 @@ main .title h2 span {
   height: fit-content;
   width: 90%;
   background-color: white !important;
-  border: 2px solid blue;
   background: url(../images/box-left-top.png) top left, url(../images/box-right-top.png) top right, url(../images/box-bottom-left.png) bottom left, url(../images/box-bottom_right.png) bottom right;
   background-repeat: no-repeat;
 }
@@ -16311,7 +16317,6 @@ main .title h2 span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid green;
 }
 .section-menu_content .our-story p {
   width: 60%;
@@ -16319,7 +16324,6 @@ main .title h2 span {
   margin: 20px 0;
 }
 .section-menu_content .menu-list {
-  border: 2px solid red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16406,6 +16410,68 @@ main .title h2 span {
   color: #c42d40;
 }
 
+@media (max-width: 768px) {
+  .section-menu_content .our-story p {
+    font-size: max(2vw, 13px);
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar .onglet-sidebar a {
+    font-size: max(3vw, 12px);
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar .onglet-sidebar a i {
+    color: grey;
+    font-size: max(7vw, 25px);
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content {
+    width: 100%;
+    height: fit-content;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col:first-child {
+    margin-right: 30px;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col {
+    justify-content: center !important;
+    height: 100px;
+    padding: 0;
+    border: 2px solid #ff47ac;
+    border-bottom: 2px dashed grey;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col > * {
+    display: flex;
+    justify-content: center;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col img {
+    width: 60%;
+    height: 60%;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .menu-list_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .menu-list_text p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .menu-list_text p:first-of-type {
+    font-weight: bold;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  .section-menu_content .menu-list .menu-list_content .sidebar-content .row .col .price span {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 0 10px;
+    color: #c42d40;
+  }
+}
 .meet-chef_container {
   height: fit-content;
   background-color: black;
