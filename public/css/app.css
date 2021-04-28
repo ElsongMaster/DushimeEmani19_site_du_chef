@@ -16439,7 +16439,7 @@ main .title h2 span {
 }
 
 .section_book-table {
-  height: 1300px;
+  height: fit-content;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -16547,6 +16547,89 @@ main .title h2 span {
 }
 .section_book-table .our-blog_container .lien-know a {
   color: white;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/testimonials_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+}
+.testimonials .title {
+  margin: 75px 0;
+}
+.testimonials .title h2 {
+  color: white;
+}
+.testimonials .container-testimonials {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding: 0;
+}
+.testimonials .container-testimonials span {
+  color: #c42d40 !important;
+}
+.testimonials .container-testimonials h4 {
+  font-size: 15px;
+  color: white;
+}
+.testimonials .container-testimonials p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.testimonials .container-testimonials .row-testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+}
+.testimonials .container-testimonials .row-testimonials .testimonials-text {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  height: fit-content;
+  width: 65%;
+}
+.testimonials .container-testimonials .row-testimonials .testimonials-img {
+  width: max-content;
+}
+.testimonials .container-testimonials .row-testimonials .testimonials-img img {
+  height: 124px;
+  width: 124px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1000px) {
+  .testimonials {
+    height: fit-content;
+  }
+  .testimonials .container-testimonials {
+    height: fit-content;
+  }
+  .testimonials .container-testimonials .row-testimonials {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .testimonials .container-testimonials .row-testimonials .testimonials-text {
+    order: 2;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: fit-content;
+  }
+  .testimonials .container-testimonials .row-testimonials .testimonials-img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .testimonials .container-testimonials .row-testimonials .testimonials-img img {
+    height: 134px;
+    width: 134px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
