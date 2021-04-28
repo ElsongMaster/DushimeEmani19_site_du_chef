@@ -16276,6 +16276,8 @@ main {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/main_bg.jpg);
+  border: 2px solid red;
+  height: 3800px;
 }
 main .title {
   display: flex;
@@ -16630,6 +16632,38 @@ main .title h2 span {
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.8);
   }
+}
+section.our-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.our-contact .title {
+  margin: 50px 0;
+}
+section.our-contact .our-contact_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #c42d40;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+}
+section.our-contact .our-contact_content * {
+  color: white;
+}
+section.our-contact .our-contact_content > div:not(:last-of-type) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+section.our-contact .our-contact_content > div {
+  text-align: center;
+}
+section.our-contact .our-contact_content > div i {
+  font-size: 50px;
+}
+section.our-contact .our-contact_content > div p {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

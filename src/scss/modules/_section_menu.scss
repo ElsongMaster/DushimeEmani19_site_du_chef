@@ -3,7 +3,10 @@ main {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/main_bg.jpg);
+  border: 2px solid red;
+  // background-size: cover;
 
+  height: 3800px;
   .title {
     display: flex;
     flex-direction: column;
