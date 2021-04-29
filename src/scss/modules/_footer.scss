@@ -40,7 +40,9 @@ footer {
       .row-bg {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+
         .insta-bg1 {
           background-image: url("../images/instragram_gallery_img1.jpg");
         }
@@ -76,7 +78,7 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   footer {
     .footer-content {
       justify-content: center;

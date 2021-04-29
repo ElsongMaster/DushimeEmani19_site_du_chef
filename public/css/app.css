@@ -16381,7 +16381,7 @@ main .title h2 span {
   color: #c42d40;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   main {
     height: 4600px;
   }
@@ -16833,7 +16833,8 @@ footer .footer-content .container-instagram {
 footer .footer-content .container-instagram .row-bg {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 90%;
 }
 footer .footer-content .container-instagram .row-bg .insta-bg1 {
   background-image: url("../images/instragram_gallery_img1.jpg");
@@ -16861,7 +16862,7 @@ footer .bg-footer {
   background-color: #c42d40;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   footer .footer-content {
     justify-content: center;
     flex-wrap: wrap;
