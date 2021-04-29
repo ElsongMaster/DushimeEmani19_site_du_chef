@@ -16174,14 +16174,14 @@ header nav ul li a:hover {
   align-items: center;
   height: 10px;
   width: 10px;
-  color: #5a5a5a;
-  font-size: 30px !important;
+  color: rgba(221, 213, 213, 0.61);
+  font-size: 50px !important;
   background-color: transparent !important;
   border: none;
-  padding: 1px;
+  padding: 4.5px 5px 5px 6px;
 }
 .carousel ol.carousel-indicators li.active {
-  border: 1px solid white !important;
+  border: 2px solid white !important;
   border-radius: 50%;
   color: white;
 }
