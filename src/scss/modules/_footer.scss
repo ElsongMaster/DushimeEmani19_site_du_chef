@@ -1,11 +1,23 @@
 footer {
   .footer-content {
+    position: relative;
     display: flex;
     background: url("../images/footer_background.jpg");
+
+    background-attachment: fixed;
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
+
     height: 300px;
+    .bg_decoration-footer {
+      position: absolute;
+      top: 0;
+      background: url("../images/footer_bottom_decoration_img.png");
+      background-repeat: repeat-x;
+      height: 10px;
+    }
+
     > * {
       height: 100%;
       width: 100%;

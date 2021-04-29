@@ -61,11 +61,11 @@ header {
           height: 100%;
 
           width: 100%;
-          font-size: 15px;
+          font-size: 17pxpx;
         }
         a:hover {
           color: white;
-          background-color: rgb(196, 45, 64);
+          background-color: $redlight;
         }
       }
     }
