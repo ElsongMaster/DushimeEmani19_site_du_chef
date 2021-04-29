@@ -3,20 +3,21 @@ main {
   flex-direction: column;
   align-items: center;
   background-image: url(../images/main_bg.jpg);
-  // border: 2px solid red;
-  // background-size: cover;
+  min-width: 436px;
 
-  height: 4000px;
+  height: 4200px;
+  // height: fit-content;
+
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 50px 0;
 
     h2 {
       span {
         text-transform: uppercase;
-        color: rgb(196, 45, 64);
+        color: $redlight;
       }
     }
   }
@@ -28,26 +29,17 @@ main {
   height: fit-content;
   width: 90%;
   background-color: white !important;
-  // background-blend-mode: multiply;
-
-  // border: 2px solid blue;
 
   background: url(../images/box-left-top.png) top left,
     url(../images/box-right-top.png) top right,
     url(../images/box-bottom-left.png) bottom left,
     url(../images/box-bottom_right.png) bottom right;
   background-repeat: no-repeat;
-  .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
+
   .our-story {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: 2px solid green;
 
     p {
       width: 60%;
@@ -56,7 +48,6 @@ main {
     }
   }
   .menu-list {
-    // border: 2px solid red;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,12 +59,10 @@ main {
 
       .sidebar {
         width: 20%;
-        // display: flex;
-        // flex-direction: column;
+
         .onglet-sidebar {
           display: flex;
           flex-direction: column;
-          // justify-content: flex-end;
           width: 100%;
           height: 100px;
           border-bottom: 2px solid gray !important;
@@ -85,8 +74,7 @@ main {
             align-items: center;
             border: none !important;
             width: 100% !important;
-            // height: 15%;
-            // border: 2px solid rgb(0, 174, 255) !important;
+
             height: 100%;
             color: black;
             font-size: 25px;
@@ -97,16 +85,15 @@ main {
           }
         }
         a:focus {
-          border-right: 5px solid rgb(196, 45, 64) !important;
+          border-right: 5px solid $redlight !important;
 
           i {
-            color: rgb(196, 45, 64) !important;
+            color: $redlight !important;
           }
         }
       }
       .sidebar-content {
         width: 100%;
-        // border: 2px solid yellow;
         .row {
           display: flex;
           justify-content: space-between;
@@ -118,12 +105,6 @@ main {
             align-items: center;
             height: 100px;
             padding: 0;
-            // border: 2px solid rgb(255, 71, 172);
-
-            // width: 45%;
-            // border-top: 2px solid blue;
-            // border-right: 2px solid blue;
-            // border-left: 2px solid blue;
 
             border-bottom: 2px dashed grey;
             img {
@@ -148,13 +129,12 @@ main {
               display: flex;
               justify-content: flex-end;
               align-items: center;
-              // border: 2px solid tomato;
               height: 100%;
 
               span {
                 background-color: rgba(128, 128, 128, 0.3);
                 padding: 0 10px;
-                color: rgb(196, 45, 64);
+                color: $redlight;
               }
             }
           }
@@ -163,8 +143,15 @@ main {
     }
   }
 }
-
+@media (max-width: 1024px) {
+  main {
+    height: 4600px;
+  }
+}
 @media (max-width: 768px) {
+  main {
+    height: 5900px;
+  }
   .section-menu_content {
     .our-story {
       p {
@@ -187,7 +174,6 @@ main {
         .sidebar-content {
           width: 100%;
           height: fit-content;
-          // border: 2px solid yellow;
           .row {
             display: flex;
             flex-direction: column !important;
@@ -199,16 +185,10 @@ main {
               justify-content: center !important;
               height: 100px;
               padding: 0;
-              border: 2px solid rgb(255, 71, 172);
               > * {
                 display: flex;
                 justify-content: center;
-                // border: 2px solid yellow;
               }
-              // width: 45%;
-              // border-top: 2px solid blue;
-              // border-right: 2px solid blue;
-              // border-left: 2px solid blue;
 
               border-bottom: 2px dashed grey;
               img {
@@ -232,13 +212,12 @@ main {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                // border: 2px solid tomato;
                 height: 100%;
 
                 span {
                   background-color: rgba(128, 128, 128, 0.3);
                   padding: 0 10px;
-                  color: rgb(196, 45, 64);
+                  color: $redlight;
                 }
               }
             }
@@ -246,5 +225,12 @@ main {
         }
       }
     }
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    height: 6750px;
+    width: 100%;
   }
 }

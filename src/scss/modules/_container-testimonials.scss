@@ -17,11 +17,11 @@
   .container-testimonials {
     display: flex;
     justify-content: space-between;
-    // border: 2px solid purple;
+    flex-wrap: wrap;
     width: 85%;
     padding: 0;
     span {
-      color: rgb(196, 45, 64) !important;
+      color: $redlight !important;
     }
     h4 {
       font-size: 15px;
@@ -29,7 +29,7 @@
     }
     p {
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.5);
+      color: $greylight;
     }
 
     .row-testimonials {
@@ -37,16 +37,16 @@
       justify-content: space-between;
       align-items: center;
       width: 49%;
-      //   border: 2px solid blue;
+      min-width: 262px;
+      margin: 0 auto;
       .testimonials-text {
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        border: 1px solid $greylight;
         border-radius: 10px;
         height: fit-content;
         width: 65%;
       }
 
       .testimonials-img {
-        // border: 2px solid red;
         width: max-content;
         img {
           height: 124px;
@@ -65,21 +65,23 @@
     .container-testimonials {
       height: fit-content;
 
+      .row-testimonials:first-child {
+        margin-bottom: 30px;
+      }
       .row-testimonials {
         height: fit-content;
         flex-direction: column;
+
         .testimonials-text {
           order: 2;
-          border: 1px solid rgba(255, 255, 255, 0.5);
+          border: 1px solid $greylight;
           border-radius: 10px;
           height: fit-content;
-          //   width: 200px;
         }
 
         .testimonials-img {
           order: 1;
           margin-bottom: 20px;
-          //   border: 2px solid red;
           img {
             height: 134px;
             width: 134px;
@@ -87,6 +89,45 @@
             border: 5px solid rgba(255, 255, 255, 0.8);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    .container-testimonials {
+      flex-wrap: wrap;
+      .row-testimonials {
+        .testimonials-text {
+          order: 2;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 10px;
+          height: fit-content;
+          width: max(70%, 168px);
+        }
+
+        .testimonials-img {
+          order: 1;
+          margin-bottom: 20px;
+          img {
+            height: 134px;
+            width: 134px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .testimonials {
+    .container-testimonials {
+      width: 100%;
+      .row-testimonials {
+        width: 100%;
       }
     }
   }
