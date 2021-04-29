@@ -99,25 +99,44 @@ section {
 }
 
 @media (max-width: 1023px) {
-  .carousel {
-    .header-text {
-      p {
-        font-size: max(4vw, 15px);
+  .carousel-container {
+    .carousel {
+      .header-text {
+        p {
+          font-size: max(4vw, 15px);
 
-        span {
-          font-size: max(6vw, 20px);
+          span {
+            font-size: max(6vw, 20px);
+          }
+        }
+        .liens {
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100px;
+          min-height: 57px;
+          margin-bottom: max(5vw, 50px);
+
+          a {
+            font-size: max(2vw, 8px);
+          }
         }
       }
-      .liens {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100px;
-        min-height: 57px;
-        margin-bottom: max(5vw, 50px);
+    }
+  }
+}
 
-        a {
-          font-size: max(2vw, 8px);
+@media (max-width: 425px) {
+  .carousel-container {
+    .carousel {
+      .header-text {
+        .liens {
+          a {
+            display: flex;
+          }
+          a:last-of-type {
+            margin-bottom: 20px;
+          }
         }
       }
     }

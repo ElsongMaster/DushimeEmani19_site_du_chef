@@ -16248,13 +16248,13 @@ section {
 }
 
 @media (max-width: 1023px) {
-  .carousel .header-text p {
+  .carousel-container .carousel .header-text p {
     font-size: max(4vw, 15px);
   }
-  .carousel .header-text p span {
+  .carousel-container .carousel .header-text p span {
     font-size: max(6vw, 20px);
   }
-  .carousel .header-text .liens {
+  .carousel-container .carousel .header-text .liens {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -16262,8 +16262,16 @@ section {
     min-height: 57px;
     margin-bottom: max(5vw, 50px);
   }
-  .carousel .header-text .liens a {
+  .carousel-container .carousel .header-text .liens a {
     font-size: max(2vw, 8px);
+  }
+}
+@media (max-width: 425px) {
+  .carousel-container .carousel .header-text .liens a {
+    display: flex;
+  }
+  .carousel-container .carousel .header-text .liens a:last-of-type {
+    margin-bottom: 20px;
   }
 }
 main {
