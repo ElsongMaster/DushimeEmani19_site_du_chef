@@ -16818,6 +16818,9 @@ section.our-contact .our-contact_content > div p {
   margin-top: 5px;
 }
 
+footer {
+  min-width: 436px;
+}
 footer .footer-content {
   position: relative;
   display: flex;
